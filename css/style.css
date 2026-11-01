@@ -1,0 +1,42 @@
+body { 
+    font-family: system-ui, sans-serif; 
+    margin: 24px; 
+    color: #222; 
+    background: #f7f8fa; 
+}
+h1 { 
+    font-size: 1.3rem; 
+    margin: 0 0 12px;
+}
+.controls { 
+    margin-bottom: 12px; 
+}
+.layout { 
+    display: flex; 
+    gap: 32px; 
+    align-items: flex-start; 
+    flex-wrap: wrap; 
+}
+svg text { 
+    font-size: 11px; 
+    fill: #444; 
+}
+.hint, .error { 
+    max-width: 340px; 
+    line-height: 1.4; 
+    color: #555; 
+}
+.error { 
+    color: #b00020; 
+}
+/* Le tooltip est un simple <div> caché, qu'on déplace et qu'on remplit au survol */
+#tooltip {
+    position: absolute; 
+    pointer-events: none; 
+    opacity: 0;
+    background: #222; 
+    color: #fff; 
+    padding: 6px 9px; 
+    border-radius: 4px; 
+    font-size: 12px;
+}
